@@ -30,7 +30,7 @@ public:
     void addNewEntity(std::weak_ptr<Collidable>  new_entity);
 
     /// Collision manager destructor
-	virtual ~CollisionManager();
+	~CollisionManager();
 
 private:
     // Pointers to all collidable entities within the game world

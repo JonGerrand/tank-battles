@@ -58,7 +58,7 @@ public:
     ///Recieve the Tank rotation
     virtual const float getDrawRotation();
 	///Tank object destructor
-    virtual ~Tank();
+    ~Tank();
 
 private:
 
@@ -69,7 +69,7 @@ private:
     ///The angle of rotation for the Tank entity
     float _rotation;
     ///SFML co-ordinate system for the Tank
-    sf::Sprite _tank;
+    sf::Transformable _tank;
     ///Enumeration type defining the tank
     entity_type _type;
 };

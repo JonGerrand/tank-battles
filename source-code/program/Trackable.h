@@ -25,8 +25,7 @@ public:
     virtual const sf::Vector2f& getPosition() = 0;
     ///Get the current orientation of Trackable object
     virtual const float getOrientation() = 0;
-    ///Destructor
-    virtual ~Trackable() = 0;
+    ~Trackable();
 
 private:
 

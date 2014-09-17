@@ -42,7 +42,7 @@ public:
     ///Recieve the Barrier rotation
     virtual const float getDrawRotation();
 	///Destructor for the Barrrier entity
-	virtual ~Barrier();
+	~Barrier();
 
 
 private:

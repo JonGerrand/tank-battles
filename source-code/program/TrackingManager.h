@@ -14,7 +14,6 @@
 //Includes
 #include "Manager.h"
 #include "SFML/Graphics.hpp"
-#include "Trackable.h"
 
 class TrackingManager: public Manager
 {
@@ -42,7 +41,7 @@ public:
 	const float getP2Rotation();
 
 	/// Destructor for Tracking manager
-	virtual ~TrackingManager();
+	~TrackingManager();
 
 
 private:

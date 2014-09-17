@@ -26,21 +26,17 @@ void TrackingManager::manage()
     auto _trackables_itterator = _trackables.begin();
     for(; _trackables_itterator != _trackables.end(); _trackables_itterator++)
     {
-        //Convert Itterator to Weak Pointer
-        std::weak_ptr<Trackable> entity_track_wp = (*_trackables_itterator);
-        //Convert Weak Pointer to Shared Pointer
-        std::shared_ptr<Trackable> entity_track_sp = entity_track_wp.lock();
-
-        if(entity_track_sp->getType() == p1_tank)
+        std::weak_ptr<Trackable> entity_wp = (*_trackables_itterator);
+        if(entity_wp->getType == p1_tank)
         {
-            _p1Position = entity_track_sp->getPosition();
-            _p1Rotation = entity_track_sp->getOrientation();
+            _p1Position = entity_wp->getPosition;
+            _p1Rotation = entity_wp->getOrientation;
         }
 
-        if(entity_track_sp->getType() == p2_tank)
+        if(entity_wp->getType == p2_tank)
         {
-            _p2Position = entity_track_sp->getPosition();
-            _p2Rotation = entity_track_sp->getOrientation();
+            _p2Position = entity_wp->getPosition;
+            _p2Rotation = entity_wp->getOrientation;
         }
 
     }
